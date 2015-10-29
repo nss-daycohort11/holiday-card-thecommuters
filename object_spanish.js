@@ -1,39 +1,26 @@
-$(document).ready(function() { 
-
-var Translate = (function(spanish) {
-  var spanish = {"merry":"feliz", "christmas":"navidad", "and":"y", "happy":"feliz", "new":"nuevo", "year":"ano"}
+var Translate = (function(translate) {
+    var spanish = {"merry":"Feliz", "christmas":"navidad", "and":"y", "happy":"feliz", "new":"ano", "year":"nuevo"};
   
-
+    translate.translateToSpanish = function(userInputArray) {
   
-  solarsystem.setSpanishTranslation = function () {
+      var stringDisplay = "" ;
+    for (i=0; i<userInputArray.length; i++){
+  
+      var currentInput = userInputArray[i];
+      // displayMessage = french[currentInput];
+      stringDisplay += spanish[currentInput] + " ";
+      $("#container").html(stringDisplay);
+  
+      }
+    return spanish[userInput];
+    }
+  
     
-    
-    return closest_stars;
-  };
 
-  // solarsystem.getSolarsystemAge = function () {
-  //   return solarsystem_age;
-  // };
 
-  // solarsystem.setSolarsystemAge = function (age) {
-  //   if (age >= solarsystem_age) {
-  //     solarsystem_age = age;
-  //     this.last_modified = Date.now();
-  // } else {
-  //   throw "Age cannot be less than " + solarsystem_age;
-  // }
-  // };
+    translate.getVocab = function(){
+      return spanish;
+    }
+  return translate;
 
-  // solarsystem.getDwarfPlanets = function () {
-  //   return dwarf_planets;
-  // }
-
-  // solarsystem.setDwarfPlanets = function (dwarf) {
-  //   dwarf_planets.push(dwarf);
-  //   this.last_modified = Date.now();
-  // }
-  // return solarsystem;
-
-})();
-
-});
+  })(Translate);
