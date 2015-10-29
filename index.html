@@ -9,14 +9,15 @@
   </head>
   <body>
     <div id="input_field">
-    	<input type="text" id="userInput" placeholder="Enter Text">
-    	<button id="go">Go</button>
+    	<input type="text" id="userInput" value="Merry Christmas and Happy New Year!!!!" readonly>
+    	<button id="translate">Translate</button>
     	<div id="translator">
-    		<a href="#" id="italian">To Italian</a>
-    		<a href="#" id="spanish">To Spanish</a>
-    		<a href="#" id="french">To French</a>
+    		<input type="radio" name="target_language" id="italian">To Italian</input>
+    		<input type="radio" name="target_language" id="spanish">To Spanish</a>
+    		<input type="radio" name="target_language" id="french">To French</a>
     	</div>	
     </div>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>	
     <script src="object.js"></script>
     <script src="object_italian.js"></script>
     <script src="object_spanish.js"></script>
