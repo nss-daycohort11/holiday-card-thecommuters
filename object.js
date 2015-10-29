@@ -1,3 +1,2 @@
-var Translate = (function() {
-
-});
+var Translate ={};
+	
