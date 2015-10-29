@@ -3,14 +3,17 @@ $(document).ready(function() {
   var french = {"merry":"joyeux", "christmas":"noel", "and":"et", "happy":"bonne", "new":"annee", "year":"!"}
 ;
   
-  translate.translateToFrench = function(userInput) {
+    Translate.translateToFrench = function(userInput) {
+    
+
+    return french[userInput];
     
     } 
       
   
-userInput.getVocab = function(){
-  return french[userInput];
-}
+    Translate.getVocab = function(){
+      return French;
+  }
   }
   // userInput.getAge = function() {
   //   return age;
