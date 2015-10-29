@@ -14,9 +14,6 @@ var Translate = (function(translate) {
       }
     return french[userInput];
     }
-  
-    
-
 
     translate.getVocab = function(){
       return French;
