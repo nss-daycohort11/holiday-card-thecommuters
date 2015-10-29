@@ -1,21 +1,25 @@
-$(document).ready(function() {
+// $(document).ready(function() {
 
 
-var Translate = (function(translateIt) {
-  var Italian = 20;
-  // {"merry":"Buon", "christmas":"Natale", "and":"e", "happy":"felice", "new":"anno", "year":"nuovo"};
-  console.log(Italian);
+var Translate = (function(translate) {
+    var Italian = {"merry":"Buon", "christmas":"Natale", "and":"e", "happy":"felice", "new":"anno", "year":"nuovo"};
+  
+    translate.translateToItalian = function(userInputArray) {
+  var stringDisplay = "" ;
+    for (i=0; i<userInputArray.length; i++){
+  
+      var currentInput = userInputArray[i];
+      // displayMessage = french[currentInput];
+      stringDisplay += Italian[currentInput] + " ";
+      $("#container").html(stringDisplay);
+  
+      }
+    return Italian[userInput];
+    }
 
+    translate.getVocab = function(){
+      return Italian;
+    }
+  return translate;
 
-  translateIt.getIt = function() {
-  	// for (var prop in translations) {
-  	// 	console.log(translations);
-  	// }
-  	return Italian;
-  };
-
-    // return translateIt;
-
-	})(Translate);
-
-});
+  })(Translate);
