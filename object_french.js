@@ -1,13 +1,27 @@
 $(document).ready(function() {
+  function moveToFrench() {
+console.log("moveToFrench fired")
+  }
+
   var Translate = (function(translate) {
   var french = {"merry":"joyeux", "christmas":"noel", "and":"et", "happy":"bonne", "new":"annee", "year":"!"}
 ;
   
-    Translate.translateToFrench = function(userInput) {
-    
-
+    Translate.translateToFrench = function() {
+    for (i=0; i<=userInputArray.length; i++){
+    // For each item on array, loops through object properties.
+      for (var x in Translate){ 
+        // Compares userinput array to Translate object
+        console.log(x);
+      if (userInputArray[i] === Translate[x])
+        // Concatenates displayMessage as array.
+        displayMessage += hit
+        displaymessage.toString();
+        console.log(displaymessage)
+      }
     return french[userInput];
     
+    $("go").click(funtion(e)){}
     } 
       
   
@@ -15,6 +29,7 @@ $(document).ready(function() {
       return French;
   }
   }
+
   // userInput.getAge = function() {
   //   return age;
   // };
@@ -31,9 +46,9 @@ $(document).ready(function() {
   //   return innerfive;
   // };
 
-  return userInput;
+  // return userInput;
 
-})(Translate);
+ })(Translate);
 
 // console.log(solarSystem);
 // console.log(solarSystem.setAge(9));
