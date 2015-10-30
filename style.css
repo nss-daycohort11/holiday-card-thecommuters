@@ -1,0 +1,41 @@
+body{
+	text-align: center;
+	top: 0;
+	left: 0;
+	background-color: #bdbdbd;
+}
+
+#input_field{
+	padding: 15px 30px	;
+	width: 100%;
+	background-color: grey ;
+	font-family: "Droid Sans", arial, serif;
+	padding: 2 2;
+	}
+
+#userInput{
+	width: 360px;
+	font-size: 1.3em;
+	}
+
+#go{
+	position: relative;
+	top: -50; left:4; 
+	font-size: 70%;
+	padding: 8px;
+	font-family: 'Roboto Condensed';
+	margin-left: 14px;
+	margin-bottom: 3px;
+}
+
+/*#go:hover{
+	background-color: white;
+}
+*/
+#translator{
+padding: 14px;
+}
+
+#container{
+	height: 40px;
+}
