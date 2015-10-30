@@ -1,5 +1,5 @@
 var Translate = (function(translate) {
-    var french = {"merry":"joyeux", "christmas":"noel", "and":"et", "happy":"bonne", "new":"nouvelle", "year":"an"};
+    var french = {"merry":"Joyeux", "christmas":"noel", "and":"et", "happy":"bonne", "new":"nouvelle", "year":"an"};
   
     translate.translateToFrench = function(userInputArray) {
   
